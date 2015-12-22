@@ -4117,7 +4117,7 @@ class Util
         $username  = "''";
         $username .= str_replace("'", "''", $user[0]);
         $username .= "''@''";
-        $username .= str_replace("'", "''", $user[1]);
+        $username .= str_replace("'", "''", @$user[1]);
         $username .= "''";
 
         // Prepare the query
